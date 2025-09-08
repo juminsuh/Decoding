@@ -103,8 +103,6 @@ scipy==1.15.3
 seaborn==0.13.2
 sentencepiece==0.2.0
 shellingham==1.5.4
-simcse==0.4
-simctg==0.7
 six==1.17.0
 smart_open==7.3.0.post1
 soupsieve==2.7
@@ -121,7 +119,6 @@ tomli==2.2.1
 torch==2.7.1
 tqdm==4.67.1
 traitlets==5.14.3
--e git+https://github.com/XiangLi1999/ContrastiveDecoding.git@170e9142e92159c1237d731e240f5eb14aabf428#egg=transformers&subdirectory=transformers
 triton==3.3.1
 typer==0.16.0
 typing-inspection==0.4.1

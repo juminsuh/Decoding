@@ -33,9 +33,7 @@ from transformers import (
     GPT2LMHeadModel,
     GPT2Tokenizer,
     OPTForCausalLM,
-    AutoModelForCausalLM,
-    LlamaForCausalLM,
-    LlamaTokenizer
+    AutoModelForCausalLM
 )
 
 logging.basicConfig(
@@ -49,8 +47,7 @@ MAX_LENGTH = int(10000)  # Hardcoded max length to avoid infinite loop
 
 MODEL_CLASSES = {
     "gpt2": (GPT2LMHeadModel, GPT2Tokenizer), # gpt-2
-    "opt": (OPTForCausalLM, GPT2Tokenizer),
-    "llama": (LlamaForCausalLM, LlamaTokenizer)
+    "opt": (OPTForCausalLM, GPT2Tokenizer)
 }
 
 # Padding text to help Transformer-XL and XLNet with short prompts as proposed by Aman Rusia
